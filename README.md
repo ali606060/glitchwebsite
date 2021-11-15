@@ -1,22 +1,29 @@
-# Hello Website (blank)
+# My Website
 
-This is a basic static HTML starter project you can build on however you like. No need to save. While you develop your site, your changes will happen 🪄 immediately in the preview window. You can upload assets like images or audio in `assets` to the left. The rest is up to you and your imagination.
+This is a basic static HTML website done with the help of various guides and friends.
 
 ## What's in this project?
 
-← `README.md`: That's this file, where you can tell people what your cool website does and how you built it.
+← `README.md`: That's this file you're reading.
 
-← `index.html`: This is the main HTML page for your site.
+← `index.html`: This is the main HTML page for my website.
 
-← `style.css`: CSS files add styling rules to your content.
+← `uniwork.html`: This is the page with my Uni Work.
 
-← `script.js`: If you're feeling fancy you can add interactivity to your site with JavaScript.
+← `cards.html`: This is the page with my team's Top Trump Cards (The ones I got permission to upload).
 
-![Glitch](https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2FLogo_Color.svg?v=1602781328576)
+← `style.css`: CSS file with dark mode.
 
-## You built this with Glitch!
+← `script.js`: Javascript stuff with code for the UBW button and more.
 
-[Glitch](https://glitch.com) is a friendly community where millions of people come together to build web apps and websites.
+![Swords](https://pbs.twimg.com/profile_images/1450597629356912644/4keZoXjM_400x400.jpg)
 
-- Need more help? [Check out our Help Center](https://help.glitch.com/) for answers to any common questions.
-- Ready to make it official? [Become a paid Glitch member](https://glitch.com/pricing) to boost your app with private sharing, more storage and memory, domains and more.
+## I built this with Glitch!
+
+[Glitch](https://glitch.com/@AlexGama11) is my glitch profile with my website, and possibly more projects.
+
+[Github](https://github.com/AlexGama11) is my github profile if anyone wishes to visit.
+
+[Twitter](https://twitter.com/Alex_CorreiaG) is my twitter profile in case you wish to check it, i'll post updates occasionally there.
+
+[Itch.io](https://alexmango.itch.io) is my itch.io profile if you want to see it, i'll post my games there.
