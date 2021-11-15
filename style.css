@@ -1,0 +1,51 @@
+/* a minimalist set of CSS resets */
+
+/* custom font*/
+@font-face {
+  font-family: "SegaArcadeFont"; /* This is an arbitrary name -- whatever works for you */
+  src: url("https://cdn.glitch.me/56855dbd-c685-47e7-8866-0983db1c6655%2FSEGA_Skip-B.ttf?v=1636581965873");
+}
+
+@font-face {
+  font-family: "Unown"; /* This is an arbitrary name -- whatever works for you */
+  src: url("https://cdn.glitch.me/56855dbd-c685-47e7-8866-0983db1c6655%2FUnown-OVEwA.ttf?v=1636649946310");
+}
+
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: "SegaArcadeFont", "Unown", "Sans Serif";
+  line-height: 1.5;
+  background-color: white;
+  color: black;
+  font-size: initial;
+}
+
+body.dark-theme {
+  background-color: black;
+  color: white;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+
+}
