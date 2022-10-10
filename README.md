@@ -10,11 +10,20 @@ This is a basic static HTML website done with the help of various guides and fri
 
 ← `uniwork.html`: This is the page with my Uni Work.
 
-← `cards.html`: This is the page with my team's Top Trump Cards (The ones I got permission to upload).
+← `cards.html`: This is the page with my team's Top Trump Cards (Removed for now to improve on later).
+
+← `otherprojects.html`: This is the page with my Other Work (Will add stuff once i got more to show).
+
+← `aframe.html`: This page has some aframe experimentation.
+
+← `form.html`: This page has a google form you can fill to give feedback about the website.
+
+← `socials.html`: You can view my social media on this page, allowing you to contact me.
 
 ← `style.css`: CSS file with dark mode.
 
 ← `script.js`: Javascript stuff with code for the UBW button and more.
+
 
 ![Swords](https://pbs.twimg.com/profile_images/1450597629356912644/4keZoXjM_400x400.jpg)
 

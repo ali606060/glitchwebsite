@@ -3,6 +3,9 @@
   <head>
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/zcanter/aframe-gradient-sky/master/dist/gradientsky.min.js"></script>
+    <script src="https://rawgit.com/Ctrl-Alt-Zen/aframe-mobile-controls/master/components/twoway-motion/twoway-motion.js"></script>
+
+    <!--- Metadata --->
     <meta name="title" content="AlexMango.tk" />
     <meta name="description" content="Welcome to my Website!" />
     <meta name="keywords" content="Games programming, University" />
@@ -28,18 +31,394 @@
       property="twitter:image"
       content="https://cdn.glitch.global/56855dbd-c685-47e7-8866-0983db1c6655/shirou.png?v=1664809102616"
     />
-    
-    <link rel="icon" href="https://cdn.glitch.global/56855dbd-c685-47e7-8866-0983db1c6655/shirou.png?v=1664809102616" />
+
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/56855dbd-c685-47e7-8866-0983db1c6655/shirou.png?v=1664809102616"
+    />
 
     <title>A-Frame!</title>
-    
   </head>
   <body>
-    <a-scene>
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky material="shader: gradient; topColor: 173 83 93; bottomColor: 255 244 125;"></a-sky>
+    <a-scene fog="type: linear; color: grey">
+      
+      <a-assets>
+      <img id="groundTexture" src="https://cdn.glitch.global/56855dbd-c685-47e7-8866-0983db1c6655/gravel2.png?v=1665402569692"/>
+      </a-assets>
+      
+      <!--- Sword Code --->
+      <a-box
+        position="1 1.25 -3"
+        rotation="0 90 90"
+        width="0.1"
+        height="0.05"
+        depth="0.3"
+        material="color: yellow; metalness: 0.5"
+      ></a-box>
+      <a-cylinder
+        position="1 0.75 -3"
+        radius="0.024"
+        height="1.6"
+        material="color: silver; metalness: 0.5"
+      ></a-cylinder>
+      <a-sphere
+        position="1 1.58 -3"
+        radius="0.07"
+        material="color:yellow; metalness: 0.5"
+      ></a-sphere>
+      <!--- Sword Code --->
+
+      <!--- Sword Code --->
+      <a-box
+        position="-1 1.25 -3"
+        rotation="0 90 90"
+        width="0.1"
+        height="0.05"
+        depth="0.3"
+        material="color: red; metalness: 0.5"
+      ></a-box>
+      <a-cylinder
+        position="-1 0.75 -3"
+        radius="0.024"
+        height="1.6"
+        material="color: #4f4f4f; metalness: 0.5"
+      ></a-cylinder>
+      <a-sphere
+        position="-1 1.58 -3"
+        radius="0.07"
+        material="color:red; metalness: 0.5"
+      ></a-sphere>
+      <!--- Sword Code --->
+
+      <!--- Sword Code --->
+      <a-box
+        position="0.7 1.25 -5"
+        rotation="0 90 90"
+        width="0.1"
+        height="0.05"
+        depth="0.3"
+        material="color: green; metalness: 0.5"
+      ></a-box>
+      <a-cylinder
+        position="0.7 0.75 -5"
+        radius="0.024"
+        height="1.6"
+        material="color: silver; metalness: 0.5"
+      ></a-cylinder>
+      <a-sphere
+        position="0.7 1.58 -5"
+        radius="0.07"
+        material="color:green; metalness: 0.5"
+      ></a-sphere>
+      <!--- Sword Code --->
+
+      <!--- Sword Code --->
+      <a-box
+        position="-3 1.25 -8"
+        rotation="0 90 90"
+        width="0.1"
+        height="0.05"
+        depth="0.3"
+        material="color: #61E4ED; metalness: 0.5"
+      ></a-box>
+      <a-cylinder
+        position="-3 0.75 -8"
+        radius="0.024"
+        height="1.6"
+        material="color: #4f4f4f; metalness: 0.5"
+      ></a-cylinder>
+      <a-sphere
+        position="-3 1.58 -8"
+        radius="0.07"
+        material="color:#61E4ED; metalness: 0.5"
+      ></a-sphere>
+      <!--- Sword Code --->
+
+      <!--- Sword Code --->
+      <a-box
+        position="-7 1.25 -12"
+        rotation="0 90 90"
+        width="0.1"
+        height="0.05"
+        depth="0.3"
+        material="color: orange; metalness: 0.5"
+      ></a-box>
+      <a-cylinder
+        position="-7 0.75 -12"
+        radius="0.024"
+        height="1.6"
+        material="color: silver; metalness: 0.5"
+      ></a-cylinder>
+      <a-sphere
+        position="-7 1.58 -12"
+        radius="0.07"
+        material="color:orange; metalness: 0.5"
+      ></a-sphere>
+      <!--- Sword Code --->
+
+      <!--- Sword Code --->
+      <a-box
+        position="3 1.25 -15"
+        rotation="0 90 90"
+        width="0.1"
+        height="0.05"
+        depth="0.3"
+        material="color: #ED61E8; metalness: 0.5"
+      ></a-box>
+      <a-cylinder
+        position="3 0.75 -15"
+        radius="0.024"
+        height="1.6"
+        material="color: #4f4f4f; metalness: 0.5"
+      ></a-cylinder>
+      <a-sphere
+        position="3 1.58 -15"
+        radius="0.07"
+        material="color:#ED61E8; metalness: 0.5"
+      ></a-sphere>
+      <!--- Sword Code --->
+
+      <!--- Sword Code --->
+      <a-box
+        position="5 1.25 -8"
+        rotation="0 90 90"
+        width="0.1"
+        height="0.05"
+        depth="0.3"
+        material="color: purple; metalness: 0.5"
+      ></a-box>
+      <a-cylinder
+        position="5 0.75 -8"
+        radius="0.024"
+        height="1.6"
+        material="color: silver; metalness: 0.5"
+      ></a-cylinder>
+      <a-sphere
+        position="5 1.58 -8"
+        radius="0.07"
+        material="color:purple; metalness: 0.5"
+      ></a-sphere>
+      <!--- Sword Code --->
+
+      <!--- Sword Code --->
+      <a-box
+        position="0 1.25 -6"
+        rotation="0 90 90"
+        width="0.1"
+        height="0.05"
+        depth="0.3"
+        material="color: #18f5b3; metalness: 0.5"
+      ></a-box>
+      <a-cylinder
+        position="0 0.75 -6"
+        radius="0.024"
+        height="1.6"
+        material="color: #4f4f4f; metalness: 0.5"
+      ></a-cylinder>
+      <a-sphere
+        position="0 1.58 -6"
+        radius="0.07"
+        material="color: #18f5b3; metalness: 0.5"
+      ></a-sphere>
+      <!--- Sword Code --->
+
+      <!--- Sword Code --->
+      <a-box
+        position="1 1.25 3"
+        rotation="0 90 90"
+        width="0.1"
+        height="0.05"
+        depth="0.3"
+        material="color: yellow; metalness: 0.5"
+      ></a-box>
+      <a-cylinder
+        position="1 0.75 3"
+        radius="0.024"
+        height="1.6"
+        material="color: silver; metalness: 0.5"
+      ></a-cylinder>
+      <a-sphere
+        position="1 1.58 3"
+        radius="0.07"
+        material="color:yellow; metalness: 0.5"
+      ></a-sphere>
+      <!--- Sword Code --->
+
+      <!--- Sword Code --->
+      <a-box
+        position="-1 1.25 3"
+        rotation="0 90 90"
+        width="0.1"
+        height="0.05"
+        depth="0.3"
+        material="color: red; metalness: 0.5"
+      ></a-box>
+      <a-cylinder
+        position="-1 0.75 3"
+        radius="0.024"
+        height="1.6"
+        material="color: #4F4F4F; metalness: 0.5"
+      ></a-cylinder>
+      <a-sphere
+        position="-1 1.58 3"
+        radius="0.07"
+        material="color:red; metalness: 0.5"
+      ></a-sphere>
+      <!--- Sword Code --->
+
+      <!--- Sword Code --->
+      <a-box
+        position="0.7 1.25 5"
+        rotation="0 90 90"
+        width="0.1"
+        height="0.05"
+        depth="0.3"
+        material="color: green; metalness: 0.5"
+      ></a-box>
+      <a-cylinder
+        position="0.7 0.75 5"
+        radius="0.024"
+        height="1.6"
+        material="color: silver; metalness: 0.5"
+      ></a-cylinder>
+      <a-sphere
+        position="0.7 1.58 5"
+        radius="0.07"
+        material="color:green; metalness: 0.5"
+      ></a-sphere>
+      <!--- Sword Code --->
+
+      <!--- Sword Code --->
+      <a-box
+        position="-3 1.25 8"
+        rotation="0 90 90"
+        width="0.1"
+        height="0.05"
+        depth="0.3"
+        material="color: #61E4ED; metalness: 0.5"
+      ></a-box>
+      <a-cylinder
+        position="-3 0.75 8"
+        radius="0.024"
+        height="1.6"
+        material="color: #4F4F4F; metalness: 0.5"
+      ></a-cylinder>
+      <a-sphere
+        position="-3 1.58 8"
+        radius="0.07"
+        material="color:#61E4ED; metalness: 0.5"
+      ></a-sphere>
+      <!--- Sword Code --->
+
+      <!--- Sword Code --->
+      <a-box
+        position="-7 1.25 12"
+        rotation="0 90 90"
+        width="0.1"
+        height="0.05"
+        depth="0.3"
+        material="color: orange; metalness: 0.5"
+      ></a-box>
+      <a-cylinder
+        position="-7 0.75 12"
+        radius="0.024"
+        height="1.6"
+        material="color: silver; metalness: 0.5"
+      ></a-cylinder>
+      <a-sphere
+        position="-7 1.58 12"
+        radius="0.07"
+        material="color:orange; metalness: 0.5"
+      ></a-sphere>
+      <!--- Sword Code --->
+
+      <!--- Sword Code --->
+      <a-box
+        position="3 1.25 15"
+        rotation="0 90 90"
+        width="0.1"
+        height="0.05"
+        depth="0.3"
+        material="color: #ED61E8; metalness: 0.5"
+      ></a-box>
+      <a-cylinder
+        position="3 0.75 15"
+        radius="0.024"
+        height="1.6"
+        material="color: #4F4F4F; metalness: 0.5"
+      ></a-cylinder>
+      <a-sphere
+        position="3 1.58 15"
+        radius="0.07"
+        material="color:#ED61E8; metalness: 0.5"
+      ></a-sphere>
+      <!--- Sword Code --->
+
+      <!--- Sword Code --->
+      <a-box
+        position="5 1.25 8"
+        rotation="0 90 90"
+        width="0.1"
+        height="0.05"
+        depth="0.3"
+        material="color: purple; metalness: 0.5"
+      ></a-box>
+      <a-cylinder
+        position="5 0.75 8"
+        radius="0.024"
+        height="1.6"
+        material="color: silver; metalness: 0.5"
+      ></a-cylinder>
+      <a-sphere
+        position="5 1.58 8"
+        radius="0.07"
+        material="color:purple; metalness: 0.5"
+      ></a-sphere>
+      <!--- Sword Code --->
+
+      <!--- Sword Code --->
+      <a-box
+        position="0 1.25 6"
+        rotation="0 90 90"
+        width="0.1"
+        height="0.05"
+        depth="0.3"
+        material="color: #18f5b3; metalness: 0.5"
+      ></a-box>
+      <a-cylinder
+        position="0 0.75 6"
+        radius="0.024"
+        height="1.6"
+        material="color: #4F4F4F; metalness: 0.5"
+      ></a-cylinder>
+      <a-sphere
+        position="0 1.58 6"
+        radius="0.07"
+        material="color: #18f5b3; metalness: 0.5"
+      ></a-sphere>
+      <!--- Sword Code --->
+
+      <!--- Background Code --->
+      <a-plane
+        position="0 0 -4"
+        rotation="-90 0 0"
+        width="400"
+        height="400"
+        material="src: #groundTexture; repeat: 1000 1000 1000; color: #A47352; roughness: 1"
+      ></a-plane>
+      <a-sky
+        material="shader: gradient; topColor: 173 83 93; bottomColor: 255 244 125; fog: true"
+      ></a-sky>
+      <!--- Background Code --->
+
+      <a-entity
+        camera
+        look-controls
+        wasd-controls="acceleration:10"
+        position="0 1.6 0"
+      ></a-entity>
+
+      <a-camera position="0 1.6 0"></a-camera>
     </a-scene>
   </body>
 </html>
