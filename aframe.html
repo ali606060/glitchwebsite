@@ -3,7 +3,6 @@
   <head>
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/zcanter/aframe-gradient-sky/master/dist/gradientsky.min.js"></script>
-    <script src="https://rawgit.com/Ctrl-Alt-Zen/aframe-mobile-controls/master/components/twoway-motion/twoway-motion.js"></script>
 
     <!--- Metadata --->
     <meta name="title" content="AlexMango.tk" />
@@ -40,12 +39,15 @@
     <title>A-Frame!</title>
   </head>
   <body>
-    <a-scene fog="type: linear; color: grey">
-      
+    <!---fog="type: linear; color: blue; far: 80 near: 5"--->
+    <a-scene >
       <a-assets>
-      <img id="groundTexture" src="https://cdn.glitch.global/56855dbd-c685-47e7-8866-0983db1c6655/gravel2.png?v=1665402569692"/>
+        <img
+          id="groundTexture"
+          src="https://cdn.glitch.global/56855dbd-c685-47e7-8866-0983db1c6655/gravel2.png?v=1665402569692"
+        />
       </a-assets>
-      
+
       <!--- Sword Code --->
       <a-box
         position="1 1.25 -3"
@@ -402,12 +404,12 @@
       <a-plane
         position="0 0 -4"
         rotation="-90 0 0"
-        width="400"
-        height="400"
-        material="src: #groundTexture; repeat: 1000 800 1; color: #A47352; roughness: 1"
+        width="50"
+        height="50"
+        material="src: #groundTexture; repeat: 100 80 1; color: #A47352; roughness: 1"
       ></a-plane>
       <a-sky
-        material="shader: gradient; topColor: 173 83 93; bottomColor: 255 244 125; fog: true"
+        material="shader: gradient; topColor: 173 83 93; bottomColor: 255 244 125; "
       ></a-sky>
       <!--- Background Code --->
 
@@ -417,8 +419,6 @@
         wasd-controls="acceleration:10"
         position="0 1.6 0"
       ></a-entity>
-
-      <a-camera position="0 1.6 0"></a-camera>
     </a-scene>
   </body>
 </html>

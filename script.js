@@ -16,7 +16,7 @@ if (currentTheme == "dark") {
   document.body.classList.add("dark-theme");
 }
 
-btn.addEventListener("click", function() {
+btn.addEventListener("click", function () {
   document.body.classList.toggle("dark-theme");
 
   let theme = "light";
@@ -92,7 +92,7 @@ function changeFont() {
       "Sans Serif";
     (document.getElementById("paragraph").style.fontFamily = "SegaArcadeFont"),
       "Sans Serif";
-   /* (document.getElementById("paragraph2").style.fontFamily = "SegaArcadeFont"),
+    /* (document.getElementById("paragraph2").style.fontFamily = "SegaArcadeFont"),
       "Sans Serif";
     (document.getElementById("paragraph3").style.fontFamily = "SegaArcadeFont"),
       "Sans Serif";
@@ -115,13 +115,13 @@ function toggleAssignment() {
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
 function openNav() {
   document.getElementById("sidemenu").style.width = "250px";
- // document.getElementById("main").style.marginLeft = "250px";
+  // document.getElementById("main").style.marginLeft = "250px";
   //document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
 function closeNav() {
   document.getElementById("sidemenu").style.width = "0";
- // document.getElementById("main").style.marginLeft = "0";
+  // document.getElementById("main").style.marginLeft = "0";
   //document.body.style.backgroundColor = "white";
 }
