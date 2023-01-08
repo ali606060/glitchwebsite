@@ -16,7 +16,7 @@ if (currentTheme == "dark") {
   document.body.classList.add("dark-theme");
 }
 
-btn.addEventListener("click", function() {
+btn.addEventListener("click", function () {
   document.body.classList.toggle("dark-theme");
 
   let theme = "light";
@@ -34,7 +34,7 @@ btn.addEventListener("click", function() {
 function changeBackground1() {
   document.body.style.background =
     "url(https://cdn.glitch.me/56855dbd-c685-47e7-8866-0983db1c6655%2F2-UBW16-06-006.jpg?v=1636645458517)";
-  document.body.style.backgroundSize = "auto";
+  document.body.style.backgroundSize = "cover";
   document.body.style.backgroundRepeat = "no-repeat";
   let theme = "light";
   if (currentTheme == "light") {
@@ -48,13 +48,13 @@ function changeBackground1() {
 function changeBackground2() {
   document.body.style.background =
     "url(https://cdn.glitch.me/56855dbd-c685-47e7-8866-0983db1c6655%2F8b3edade839e90fb3b83062eb504291b82330e0b.jpg?v=1636645462989)";
-  document.body.style.backgroundSize = "auto";
+  document.body.style.backgroundSize = "cover";
   document.body.style.backgroundRepeat = "no-repeat";
 }
 function changeBackground3() {
   document.body.style.background =
     "url(https://cdn.glitch.me/56855dbd-c685-47e7-8866-0983db1c6655%2F74-UBW16-06-148.jpg?v=1636645465177)";
-  document.body.style.backgroundSize = "auto";
+  document.body.style.backgroundSize = "cover";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.classList.toggle("dark-theme");
 }
@@ -62,7 +62,7 @@ function changeBackground3() {
 function changeBackground4() {
   document.body.style.background =
     "url(https://cdn.glitch.me/56855dbd-c685-47e7-8866-0983db1c6655%2F83-UBW16-06-161.jpg?v=1636582973374)";
-  document.body.style.backgroundSize = "auto";
+  document.body.style.backgroundSize = "cover";
   document.body.style.backgroundRepeat = "no-repeat";
 }
 
@@ -92,7 +92,7 @@ function changeFont() {
       "Sans Serif";
     (document.getElementById("paragraph").style.fontFamily = "SegaArcadeFont"),
       "Sans Serif";
-   /* (document.getElementById("paragraph2").style.fontFamily = "SegaArcadeFont"),
+    /* (document.getElementById("paragraph2").style.fontFamily = "SegaArcadeFont"),
       "Sans Serif";
     (document.getElementById("paragraph3").style.fontFamily = "SegaArcadeFont"),
       "Sans Serif";
@@ -115,13 +115,13 @@ function toggleAssignment() {
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
 function openNav() {
   document.getElementById("sidemenu").style.width = "250px";
- // document.getElementById("main").style.marginLeft = "250px";
+  // document.getElementById("main").style.marginLeft = "250px";
   //document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
 function closeNav() {
   document.getElementById("sidemenu").style.width = "0";
- // document.getElementById("main").style.marginLeft = "0";
+  // document.getElementById("main").style.marginLeft = "0";
   //document.body.style.backgroundColor = "white";
 }
