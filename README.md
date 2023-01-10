@@ -25,7 +25,7 @@ This is a basic static HTML website done with the help of various guides and fri
 ← `script.js`: Javascript stuff with code for the UBW button and more.
 
 
-![Swords](https://pbs.twimg.com/profile_images/1450597629356912644/4keZoXjM_400x400.jpg)
+![Swords](https://raw.githubusercontent.com/AlexGama11/Game-Engine/master/assets/Shirou.png)
 
 ## I built this with Glitch!
 
