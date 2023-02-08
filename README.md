@@ -24,8 +24,7 @@ This is a basic static HTML website done with the help of various guides and fri
 
 ← `script.js`: Javascript stuff with code for the UBW button and more.
 
-
-![Swords](https://pbs.twimg.com/profile_images/1450597629356912644/4keZoXjM_400x400.jpg)
+![Swords](https://cdn.glitch.global/56855dbd-c685-47e7-8866-0983db1c6655/Shirou.png?v=1675821049601)
 
 ## I built this with Glitch!
 

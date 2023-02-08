@@ -43,10 +43,45 @@
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
   <body>
     <!-- this is the start of content -->
-    <h1 id="header">Preview of Work i've done for Uni!</h1>
+
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Homepage!</a>
+      <a href="form.html">Suggestions!</a>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Free Cookies!</a>
+      <a href="work.html" class="active">Uniwork!</a>
+      <a href="socials.html">Social media!</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <p></p>
+
+    <input type="checkbox" id="switch" />
+
+    <div class="switch-btn">
+      <label for="switch">
+        <div class="icons">
+          <span class="material-symbols-rounded"> light_mode </span>
+          <span class="material-symbols-rounded"> nights_stay </span>
+        </div>
+      </label>
+    </div>
+
+    <h1 id="header">Preview of the Work i've done for Uni or myself!</h1>
     <p id="paragraph">Whenever possible, I'll upload work directly here!</p>
 
     <p id="paragraph2">The work will be shown below.</p>
@@ -71,6 +106,17 @@
       ></iframe
     >
 
+    <iframe
+      frameborder="0"
+      src="https://itch.io/embed/1771353?linkback=true&amp;bg_color=880000&amp;fg_color=46bf00&amp;link_color=46bf00&amp;border_color=53b01e"
+      width="552"
+      height="167"
+      ><a href="https://alexmango.itch.io/secret-santa-sorter"
+        >Secret Santa Sorter by AlexMango</a
+      ></iframe
+    >
+    >
+
     <p id="paragraph3">
       <a href="https://forms.gle/KaWY2NquCYoztP218"
         >Like my work or have any suggestion? Answer this form!</a
@@ -83,6 +129,22 @@
       >.
     </p>
 
+    <p id="paragraph4">
+      <a href="https://github.com/AlexGama11"
+        >Source code for my projects will be here!</a
+      >.
+    </p>
+
+    <iframe
+      src="https://github.com/sponsors/AlexGama11/button"
+      title="Sponsor me on Github!"
+      height="35"
+      width="116"
+      style="border: 0"
+    ></iframe>
+
+    <p id="paragraph">You can also sponsor me on Github!</p>
+
     <p id="VR">
       <a href="aframe.html"
         >Check out some objects i coded in VR using A-Frame!</a
@@ -90,12 +152,76 @@
     </p>
 
     <p>
+      Here are some videos showcasing part of my work, will be updated with more
+      recordings later!
+    </p>
+
+    <iframe
+      width="420"
+      height="315"
+      src="https://www.youtube.com/embed/yxDvz2ZW6-c?controls=1"
+    >
+    </iframe>
+
+    <iframe
+      width="420"
+      height="315"
+      src="https://www.youtube.com/embed/IE56-upZL80?controls=1"
+    >
+    </iframe>
+
+    <p>Here are some 2D Sprites i've made for some of my games!</p>
+
+    <img
+      src="https://cdn.glitch.global/56855dbd-c685-47e7-8866-0983db1c6655/Shirou.png?v=1675821049601"
+      alt="Shirou Emiya Sprite Icon"
+    />
+
+    <img
+      src="https://cdn.glitch.global/56855dbd-c685-47e7-8866-0983db1c6655/ShirouIconCaladbolg.png?v=1675820481786"
+      alt="Shirou Emiya Sprite Icon with Caladbolg"
+    />
+
+    <img
+      src="https://cdn.glitch.global/56855dbd-c685-47e7-8866-0983db1c6655/ShirouIconExcalibur.png?v=1675820485060"
+      alt="Shirou Emiya Sprite Icon with Excalibur"
+    />
+
+    <img
+      src="https://cdn.glitch.global/56855dbd-c685-47e7-8866-0983db1c6655/ShirouUBW.gif?v=1675820465678"
+      alt="Shirou Emiya Sprite Gif"
+    />
+
+    <img
+      src="https://cdn.glitch.global/56855dbd-c685-47e7-8866-0983db1c6655/Sword%20Treasure%201%20Gil.png?v=1675820469835"
+      alt="Sword Sprites"
+      width="250"
+      height="300"
+    />
+
+    <img
+      src="https://cdn.glitch.global/56855dbd-c685-47e7-8866-0983db1c6655/Golden%20Apple.png?v=1675820477015"
+      alt="Golden Apple Sprite"
+      width="250"
+      height="300"
+    />
+
+    <img
+      src="https://cdn.glitch.global/56855dbd-c685-47e7-8866-0983db1c6655/Ball.gif?v=1675820488142"
+      alt="Ball Gif Sprite"
+    />
+
+    <img
+      src="https://cdn.glitch.global/56855dbd-c685-47e7-8866-0983db1c6655/Sprite-0001.gif?v=1675820515835"
+      alt="Jumping Smile Sprite"
+    />
+    <p>
       <button onclick="toggleAssignment()">
         Hide/Show 1st Year Game Review Assignment
       </button>
     </p>
 
-    <div id="Assignment" style="display: none text-align: justified">
+    <div id="Assignment" style="display: none">
       <p>
         Hello, my name is Alex, and the game I am going to review today is Fate
         Grand Order. It is a single player game. It is fairly simple; players
