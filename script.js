@@ -9,22 +9,33 @@ var Font = "x";
 
 var div = document.getElementById("Assignment");
 
-const btn = document.querySelector(".btn-toggle");
+const btn = document.querySelector("input");
 
+const toggleSwitch = document.querySelector('input[type="checkbox"]');
 const currentTheme = localStorage.getItem("theme");
-if (currentTheme == "dark") {
-  document.body.classList.add("dark-theme");
+
+if (currentTheme) {
+  document.documentElement.setAttribute("data-theme", currentTheme);
+
+  if (currentTheme === "dark") {
+    toggleSwitch.checked = true;
+    document.body.classList.toggle("dark-theme");
+  }
 }
 
-btn.addEventListener("click", function () {
-  document.body.classList.toggle("dark-theme");
-
-  let theme = "light";
-  if (document.body.classList.contains("dark-theme")) {
-    theme = "dark";
+function switchTheme(e) {
+  if (e.target.checked) {
+    document.documentElement.setAttribute("data-theme", "dark");
+    localStorage.setItem("theme", "dark");
+    document.body.classList.toggle("dark-theme");
+  } else {
+    document.documentElement.setAttribute("data-theme", "light");
+    localStorage.setItem("theme", "light");
+    document.body.classList.toggle("dark-theme");
   }
-  localStorage.setItem("theme", theme);
-});
+}
+
+toggleSwitch.addEventListener("change", switchTheme, false);
 
 /* function DarkMode() {
     var element = document.body;
@@ -112,16 +123,12 @@ function toggleAssignment() {
   }
 }
 
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
-function openNav() {
-  document.getElementById("sidemenu").style.width = "250px";
-  // document.getElementById("main").style.marginLeft = "250px";
-  //document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
-
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
-function closeNav() {
-  document.getElementById("sidemenu").style.width = "0";
-  // document.getElementById("main").style.marginLeft = "0";
-  //document.body.style.backgroundColor = "white";
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
 }

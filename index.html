@@ -42,6 +42,17 @@
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
   <body>
     <!-- this is the start of content -->
@@ -50,56 +61,50 @@
       src="https://cdn.glitch.me/56855dbd-c685-47e7-8866-0983db1c6655%2FUBW.mp3?v=1636585789312"
     ></audio>
 
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">Homepage!</a>
+      <a href="form.html">Suggestions!</a>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Free Cookies!</a>
+      <a href="work.html">My Work!</a>
+      <a href="socials.html">Social media!</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <p></p>
+
+    <input type="checkbox" id="switch" />
+
+    <div class="switch-btn">
+      <label for="switch">
+        <div class="icons">
+          <span class="material-symbols-rounded"> light_mode </span>
+          <span class="material-symbols-rounded"> nights_stay </span>
+        </div>
+      </label>
+    </div>
+
     <h1 id="header" style="text-align: justified">Welcome to my website!</h1>
 
-    <div id="sidemenu" class="sidemenu">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        >&times;</a
-      >
-      <a href="form.html">Give me Suggestions!</a>
-      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Free Cookies</a>
-      <a href="uniwork.html">Check out my Uni Work!</a>
-      <!--<a href="cards.html">Check out Group Works I've done in Uni!</a>-->
-      <!--<a href="otherprojects.html">Check out any other of my projects!</a>-->
-      <a href="socials.html">Contact me on social media!</a>
-    </div>
-    <p>‎</p>
+    <a href="https://github.com/anuraghazra/github-readme-stats">
+      <img
+        align="center"
+        src="https://github-readme-stats.vercel.app/api?username=alexgama11&count_private=true&show_icons=true&theme=transparent"
+      />
+    </a>
 
-    <p id="paragraph" style="text-align: center">
-      <span onclick="openNav()" style="font-size: 25px; cursor: pointer"
-        >☰Website Menu</span
-      >
+    <a href="https://github.com/anuraghazra/github-readme-stats">
+      <img
+        align="center"
+        src="https://github-readme-stats.vercel.app/api/top-langs/?username=alexgama11&layout=compact&theme=transparent&hide=c,objective-c"
+      />
+    </a>
+
+    <p>
+      I don't update it much, but whenever I learn more HTML or CSS, I'll make
+      sure to add more features to the website so you can learn more about my
+      work!
     </p>
-
-    <p>‎</p>
-
-    <form
-      style="display: inline"
-      action="https://discord.gg/u2suCNJ"
-      target="_blank"
-      method="get"
-    >
-      <button>CitraPSS Server</button>
-    </form>
-
-    <form
-      style="display: inline"
-      action="https://discord.gg/cuKkZ6HEKe"
-      target="_blank"
-      method="get"
-    >
-      <button>FGO Arcade Server</button>
-    </form>
-
-    <form
-      style="display: inline"
-      action="https://discord.gg/vfpS24Jq22"
-      target="_blank"
-      method="get"
-    >
-      <button>Games Programming Server</button>
-    </form>
-
     <button class="btn-toggle">Toggle Dark-Mode</button>
 
     <button
@@ -107,9 +112,5 @@
     >
       I am the Bone of my Sword
     </button>
-
-    <!--- <button type="button" onclick="window.print(process.env.Test)">Try it</button> --->
-
-    <button id="FontBtn" onclick="changeFont()">Change the Font</button>
   </body>
 </html>
